@@ -48,7 +48,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
+          pip install --no-build-isolation -r requirements.txt
 
       # ── Cache Whisper small model (~244 MB, takes 1-2 min to download) ───
       - name: Cache Whisper model
