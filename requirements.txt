@@ -1,0 +1,8 @@
+moviepy==1.0.3
+openai-whisper==20231117
+pillow>=10.0.0
+numpy>=1.24.0
+requests>=2.31.0
+google-auth>=2.29.0
+google-api-python-client>=2.125.0
+opencv-python-headless>=4.9.0

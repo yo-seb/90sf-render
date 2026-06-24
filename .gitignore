@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Local render outputs (never commit these)
+output/
+audio/
+queues/
+keywords_cache/
+assets/
+caption_cache/
+done_queues/
+*.mp4
+*.mp3
+*.wav
+
+# API keys (use GitHub Secrets instead)
+pexels_api_key.txt
+service_account.json
+*_key.json
+
+# OS
+.DS_Store
+Thumbs.db
