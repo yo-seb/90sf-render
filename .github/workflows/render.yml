@@ -67,5 +67,8 @@ jobs:
           GOOGLE_SERVICE_JSON:    ${{ secrets.GOOGLE_SERVICE_JSON }}
           GDRIVE_OUTPUT_FOLDER_ID: ${{ secrets.GDRIVE_OUTPUT_FOLDER_ID }}
           N8N_WEBHOOK_URL:        ${{ secrets.N8N_WEBHOOK_URL }}
-          JOB_PAYLOAD:            ${{ toJson(github.event.client_payload) }}
+          GDRIVE_REFRESH_TOKEN:        ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+          GDRIVE_OAUTH_CLIENT_ID:      ${{ secrets.GDRIVE_OAUTH_CLIENT_ID }}
+          GDRIVE_OAUTH_CLIENT_SECRET:  ${{ secrets.GDRIVE_OAUTH_CLIENT_SECRET }}
+          JOB_PAYLOAD:                 ${{ toJson(github.event.client_payload) }}
         run: python run_job.py
